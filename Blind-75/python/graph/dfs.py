@@ -19,9 +19,8 @@ if __name__ == "__main__":
     #     B   C
     #     |
     #     D
-    
+
     graph = {'A': ['B', 'C'], 'B': ['A', 'D'], 'C': ['A'], 'D': ['B']}
     solution = Solution()
-    dfs_result = []
-    solution.dfs(graph, 'A', dfs_result)
+    dfs_result = solution.dfs(graph, 'A')
     print("DFS traversal:", dfs_result)  # Output: ['A', 'B', 'D', 'C'].
